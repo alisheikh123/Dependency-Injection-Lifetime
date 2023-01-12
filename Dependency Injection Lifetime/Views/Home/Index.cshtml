@@ -1,0 +1,43 @@
+﻿<div class="text-center">
+    <h2 class="display-4">
+        Dependency Injection Lifetime
+    </h2>
+</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Service Type</th>
+            <th>First Instance Operation ID</th>
+            <th>Second Instance Operation ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="background-color: darksalmon">
+                Transient
+            </td>
+            <td style ="background-color: darksalmon">
+                @ViewBag.Transient1
+                </td>
+            <td style ="background-color: darksalmon">
+                    @ViewBag.Transient2
+              </td>
+        </tr>
+        <tr>
+            <td>Scoped</td>
+            <td>@ViewBag.Scope1</td>
+            <td>@ViewBag.Scope2</td>
+        </tr>
+        <tr>
+            <td style ="background-color: aquamarine">
+                Singleton
+            </td>
+              <td style ="background-color: aquamarine">
+                    @ViewBag.Singleton1
+              </td>
+              <td style ="background-color: aquamarine">
+                        @ViewBag.Singleton2
+              </td>
+        </tr>
+    </tbody>
+</table>  
